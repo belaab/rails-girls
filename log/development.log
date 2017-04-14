@@ -3746,3 +3746,299 @@ Processing by RunsController#show as HTML
   [1m[36mRun Load (0.1ms)[0m  [1mSELECT  "runs".* FROM "runs" WHERE "runs"."id" = ? LIMIT 1[0m  [["id", 2]]
   Rendered runs/show.html.erb within layouts/application (0.8ms)
 Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-13 23:50:57 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RunsController#index as HTML
+  [1m[35mRun Load (0.5ms)[0m  SELECT "runs".* FROM "runs"
+  Rendered runs/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 526ms (Views: 510.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-13 23:50:58 +0200
+
+
+Started GET "/assets/runs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-13 23:50:58 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2017-04-13 23:50:58 +0200
+
+
+Started GET "/assets/runs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-13 23:50:58 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-13 23:50:58 +0200
+
+
+Started GET "/assets/application.self-0f6eb5b42bcab8109198ae59794f9578fddd950ff8943f8d5f6035a6fd4e3ca1.css?body=1" for ::1 at 2017-04-13 23:50:58 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-04-13 23:50:58 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2017-04-13 23:50:58 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2017-04-13 23:50:58 +0200
+
+
+Started GET "/runs/2" for ::1 at 2017-04-13 23:51:08 +0200
+Processing by RunsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRun Load (0.6ms)[0m  [1mSELECT  "runs".* FROM "runs" WHERE "runs"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered runs/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 89ms (Views: 57.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/runs/3" for ::1 at 2017-04-13 23:51:12 +0200
+Processing by RunsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRun Load (0.1ms)[0m  SELECT  "runs".* FROM "runs" WHERE "runs"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered runs/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/signin" for ::1 at 2017-04-13 23:51:14 +0200
+Processing by UsersController#signin as HTML
+  Rendered users/signin.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 104ms (Views: 103.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/signin" for ::1 at 2017-04-13 23:51:21 +0200
+Processing by UsersController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8slNZLHAO05yU+6cXJaPn+Kp9wlZPOhR/FZJWV5F0wjfWTwXVHbEopubP9IFyF6XVr30uFi+HCEPXZNS8z6ELQ==", "user"=>{"username"=>"aa", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? AND "users"."password" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["username", "aa"], ["password", "bb"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-04-13 23:51:21 +0200
+Processing by RunsController#index as HTML
+  [1m[35mRun Load (0.3ms)[0m  SELECT "runs".* FROM "runs"
+  Rendered runs/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signup" for ::1 at 2017-04-13 23:51:22 +0200
+Processing by UsersController#signup as HTML
+  Rendered users/signup.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/runs/3" for ::1 at 2017-04-13 23:51:41 +0200
+Processing by RunsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRun Load (0.2ms)[0m  [1mSELECT  "runs".* FROM "runs" WHERE "runs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered runs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/runs/2" for ::1 at 2017-04-13 23:51:47 +0200
+Processing by RunsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRun Load (0.1ms)[0m  SELECT  "runs".* FROM "runs" WHERE "runs"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered runs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/signup" for ::1 at 2017-04-13 23:51:49 +0200
+Processing by UsersController#signup as HTML
+  Rendered users/signup.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for ::1 at 2017-04-13 23:51:51 +0200
+Processing by UsersController#signin as HTML
+  Rendered users/signin.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for ::1 at 2017-04-13 23:51:56 +0200
+Processing by UsersController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LkZO+B1EXu9qJWs1ozXYfDGDiMIxbiFUPunVZMJ3+90D1j+L+PKhA4Ptunv6awl0hZeLczDs1STN4g9vbwys+A==", "user"=>{"username"=>"aa", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? AND "users"."password" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["username", "aa"], ["password", "bb"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-04-13 23:51:56 +0200
+Processing by RunsController#index as HTML
+  [1m[35mRun Load (0.3ms)[0m  SELECT "runs".* FROM "runs"
+  Rendered runs/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signup" for ::1 at 2017-04-13 23:51:58 +0200
+Processing by UsersController#signup as HTML
+  Rendered users/signup.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2017-04-13 23:52:06 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vog69nUktnexM/JP3MP3qa2gMekzFfQhjkxBgkrDfxKTGEuFkJJJm1j7IwGFnSahGbQyWDKXAFF9R5uJ57goNw==", "user"=>{"first_name"=>"aa", "last_name"=>"aa", "username"=>"aa", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "aa"], ["last_name", "aa"], ["username", "aa"], ["password", "aa"], ["created_at", "2017-04-13 21:52:06.661461"], ["updated_at", "2017-04-13 21:52:06.661461"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2017-04-13 23:52:06 +0200
+Processing by RunsController#index as HTML
+  [1m[35mRun Load (0.2ms)[0m  SELECT "runs".* FROM "runs"
+  Rendered runs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/signup" for ::1 at 2017-04-13 23:52:08 +0200
+Processing by UsersController#signup as HTML
+  Rendered users/signup.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for ::1 at 2017-04-13 23:52:11 +0200
+Processing by UsersController#signin as HTML
+  Rendered users/signin.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for ::1 at 2017-04-13 23:52:15 +0200
+Processing by UsersController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YxWExFXatZtAzTdLUI7lD7/jnB7G6lPoDqbc5TFIt7ZOhfW3sGxKd6kF5gUJ0DQHC/efr8dop5j9rQbunDPgkw==", "user"=>{"username"=>"aa", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? AND "users"."password" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["username", "aa"], ["password", "aa"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-13 23:52:15 +0200
+Processing by RunsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mRun Load (0.2ms)[0m  [1mSELECT "runs".* FROM "runs"[0m
+  Rendered runs/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/runs/new" for ::1 at 2017-04-13 23:52:19 +0200
+Processing by RunsController#new as HTML
+  Rendered runs/new.html.erb within layouts/application (8.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/runs" for ::1 at 2017-04-13 23:52:36 +0200
+Processing by RunsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uVgqGBn2jXEV3nZDjkN3p5uBI4S6VOZ4nLiJqF9SaqWUyFtr/EBynfwWpw3XHaavL5UgNbvWEghvs1Oj8ik9gA==", "run"=>{"name"=>"Test", "date"=>"", "city"=>"LA", "distance"=>"6"}, "commit"=>"Create Run"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "runs" ("name", "city", "distance", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Test"], ["city", "LA"], ["distance", 6.0], ["created_at", "2017-04-13 21:52:36.791322"], ["updated_at", "2017-04-13 21:52:36.791322"]]
+  [1m[36m (75.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/runs/4
+Completed 302 Found in 83ms (ActiveRecord: 76.7ms)
+
+
+Started GET "/runs/4" for ::1 at 2017-04-13 23:52:36 +0200
+Processing by RunsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mRun Load (0.1ms)[0m  SELECT  "runs".* FROM "runs" WHERE "runs"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered runs/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/runs" for ::1 at 2017-04-13 23:52:41 +0200
+Processing by RunsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mRun Load (0.2ms)[0m  [1mSELECT "runs".* FROM "runs"[0m
+  Rendered runs/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/runs/new" for ::1 at 2017-04-14 00:30:48 +0200
+Processing by RunsController#new as HTML
+  Rendered runs/new.html.erb within layouts/application (20.4ms)
+  [1m[35mUser Load (2.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 92ms (Views: 81.3ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/runs" for ::1 at 2017-04-14 00:30:50 +0200
+Processing by RunsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CV5UiTDroGeQjC2/MXCxPc8W/D/BnCAyj4IV+027ZT0kziX61V1fi3lE/PFoLmA1ewL/jsAe1EJ8ic/w4MAyGA==", "run"=>{"name"=>"", "date"=>"", "city"=>"", "distance"=>""}, "commit"=>"Create Run"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "runs" ("name", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["city", ""], ["created_at", "2017-04-13 22:30:50.313249"], ["updated_at", "2017-04-13 22:30:50.313249"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/runs/5
+Completed 302 Found in 18ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/runs/5" for ::1 at 2017-04-14 00:30:50 +0200
+Processing by RunsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mRun Load (0.3ms)[0m  SELECT  "runs".* FROM "runs" WHERE "runs"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered runs/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/runs" for ::1 at 2017-04-14 00:30:52 +0200
+Processing by RunsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mRun Load (0.4ms)[0m  [1mSELECT "runs".* FROM "runs"[0m
+  Rendered runs/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/runs/4" for ::1 at 2017-04-14 00:30:53 +0200
+Processing by RunsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mRun Load (0.4ms)[0m  SELECT  "runs".* FROM "runs" WHERE "runs"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered runs/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/runs" for ::1 at 2017-04-14 00:30:59 +0200
+Processing by RunsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mRun Load (0.7ms)[0m  [1mSELECT "runs".* FROM "runs"[0m
+  Rendered runs/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/logout" for ::1 at 2017-04-14 11:17:09 +0200
+Processing by UsersController#logout as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-14 11:17:09 +0200
+Processing by RunsController#index as HTML
+  [1m[35mRun Load (2.3ms)[0m  SELECT "runs".* FROM "runs"
+  Rendered runs/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 198ms (Views: 182.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/runs/4" for ::1 at 2017-04-14 11:17:12 +0200
+Processing by RunsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRun Load (0.3ms)[0m  [1mSELECT  "runs".* FROM "runs" WHERE "runs"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered runs/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signin" for ::1 at 2017-04-14 11:17:18 +0200
+Processing by UsersController#signin as HTML
+  Rendered users/signin.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for ::1 at 2017-04-14 11:21:19 +0200
+Processing by UsersController#signin as HTML
+  Rendered users/signin.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 82ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for ::1 at 2017-04-14 11:21:20 +0200
+Processing by UsersController#signin as HTML
+  Rendered users/signin.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.0ms)
