@@ -1,7 +1,8 @@
 # rails-girls
 
 - create/log user
-- add/edit run (where, distance, date)
+- add/edit/delete run (place, distance, date)
+
 
 using bootstrap 
 
